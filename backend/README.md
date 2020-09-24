@@ -142,9 +142,9 @@ GET '/questions'
 		}
 
 DELETE '/questions/<int:id>'
--General: Deletes the question specified by id. Returns the id of the deleted question.
--Request arguments: Question id
--Sample: curl http://127.0.0.1:5000/questions/1 -X DELETE
+- General: Deletes the question specified by id. Returns the id of the deleted question.
+- Request arguments: Question id
+- Sample: curl http://127.0.0.1:5000/questions/1 -X DELETE
 
 	{
 	      "deleted": 1, 
@@ -152,9 +152,9 @@ DELETE '/questions/<int:id>'
 	}
 
 POST '/questions'
--General: Creates a new question that is added to Questions. Returns the new question id, new list of questions, and new total number of questions.
--Request arguments: answer, category, difficulty, question
--Sample: curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d "{ \"question\": \"What do fish breathe?\", \"answer\": \"water\", \"difficulty\": 1, \"category\": \"1\" }"
+- General: Creates a new question that is added to Questions. Returns the new question id, new list of questions, and new total number of questions.
+- Request arguments: answer, category, difficulty, question
+- Sample: curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d "{ \"question\": \"What do fish breathe?\", \"answer\": \"water\", \"difficulty\": 1, \"category\": \"1\" }"
 
 	{
 	  "created": 55,
@@ -236,9 +236,9 @@ POST '/questions'
 
 
 POST '/questions/search'
--General: Brings back a list of questions that contain the search term in the question. Returns current_category deafulted to None and total questions.
--Request arguments: searchTerm
--Sample: curl http://127.0.0.1:5000/questions/search -X POST -H "Content-Type: application/json" -d "{ \"searchTerm\" : \"movie\"}"
+- General: Brings back a list of questions that contain the search term in the question. Returns current_category deafulted to None and total questions.
+- Request arguments: searchTerm
+- Sample: curl http://127.0.0.1:5000/questions/search -X POST -H "Content-Type: application/json" -d "{ \"searchTerm\" : \"movie\"}"
 
 	{
 	  "current_category": null,
@@ -303,8 +303,8 @@ POST '/quizzes'
 ## Testing
 To run the tests, run
 ```
-dropdb trivia_test
-createdb trivia_test
-psql trivia_test < trivia.psql
-python test_flaskr.py
+	dropdb trivia_test
+	createdb trivia_test
+	psql trivia_test < trivia.psql
+	python test_flaskr.py
 ```
