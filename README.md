@@ -41,13 +41,13 @@ The `./frontend` directory contains a complete React frontend to consume the dat
 
 Pay special attention to what data the frontend is expecting from each API response to help guide how you format your API. 
 
-##API Reference
+## API Reference
 
-###Getting Started
+### Getting Started
 -Base URL: This app can only be run locally and is not hosted as a base URL. The Backend app is hosted at http://127.0.0.1:5000/ 
 -Authentication: This version does not require authentication or API keys.
 
-###Error Handling
+### Error Handling
 
 Errors are returned as JSON objects in the following format:
 
@@ -62,14 +62,13 @@ The api will return three types when requests fail:
 -404: Not Found
 -422: Unprocessable Entity
 
-###Endpoints
+### Endpoints
 
 GET '/categories'
 - General: Fetches a dictionary of all categories in which the keys are the ids and the value is the corresponding string of the category
 - Request Arguments: None
 - Sample: curl http://127.0.0.1:5000/categories
 - Returns: An object with a single key, categories, that contains a object of id: category_string key:value pairs. 
-
 {
   "categories": {
     "1": "Science", 
